@@ -1,27 +1,30 @@
 import java.time.LocalDate;
 
 public class Guest {
-  private String name;
-  private int roomNumber;
+  private final String name;
+  private final int guestId;
   private LocalDate checkInDate;
   private LocalDate checkOutDate;
 
 
-  public Guest(String name, int roomNumber) {
+  public Guest(String name, int guestId) {
     this.name = name;
-    this.roomNumber = roomNumber;
+    this.guestId = guestId;
     checkInDate = LocalDate.now();
   }
 
-  //to check in guests early
-  public Guest(String name, int roomNumber, LocalDate checkInDate) {
-    this.name = name;
-    this.roomNumber = roomNumber;
-    this.checkInDate = checkInDate;
-  }
+  //todo make constructor to allow guests to check in early
 
-  public void checkOut(){
+  public Guest checkOut(){
       checkOutDate = LocalDate.now();
+      return this;
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public int getGuestId() {
+    return guestId;
+  }
 }
