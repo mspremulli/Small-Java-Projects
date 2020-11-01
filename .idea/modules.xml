@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FriendShip/FriendShip.iml" filepath="$PROJECT_DIR$/FriendShip/FriendShip.iml" />
       <module fileurl="file://$PROJECT_DIR$/FriendShip/ItemSeparator.iml" filepath="$PROJECT_DIR$/FriendShip/ItemSeparator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleHotel/SimpleHotel.iml" filepath="$PROJECT_DIR$/SimpleHotel/SimpleHotel.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Small-Java-Projects.iml" filepath="$PROJECT_DIR$/.idea/Small-Java-Projects.iml" />
     </modules>
   </component>
