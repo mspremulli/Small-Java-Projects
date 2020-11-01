@@ -17,18 +17,38 @@ public class Hotel {
     currentGuests.add(new Guest(guestName, guestId++));
   }
 
-  //TODO allow for multiple guests with same name
+  //TODO allow for multiple guests with same name(currently finds fist match)
   public void checkoutGuest(String guestName){
-    guestId--;
+
+    boolean foundGuest = false;
     int guestIndex = 0;
-    for (Guest currentGuest : currentGuests) {
+    int currentGuestsSize = currentGuests.size();
+
+    while (guestIndex < currentGuestsSize) {
+      Guest currentGuest = currentGuests.get(guestIndex);
       if (currentGuest.getName().equals(guestName)) {
-        guestIndex = currentGuest.getGuestId();
+        foundGuest = true;
         break;
       }
+
+      guestIndex++;
     }
 
-    previousGuests.add(currentGuests.get(guestIndex).checkOut());
+    if(foundGuest){
+      previousGuests.add(currentGuests.get(guestIndex).checkOut());
+      currentGuests.remove(guestIndex);
+      guestId--;
+    }
+    else{
+      System.err.println("guest not found");
+    }
+  }
+
+
+  public void displayCurrentGuests(){
+    for (Guest guest:currentGuests ) {
+      System.out.println(guest.getName() +" arrived on " + guest.getCheckInDate());
+    }
   }
 
 }

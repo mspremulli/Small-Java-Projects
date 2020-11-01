@@ -3,13 +3,15 @@ import java.time.LocalDate;
 public class Guest {
   private final String name;
   private final int guestId;
+  private int roomNumber;
   private LocalDate checkInDate;
   private LocalDate checkOutDate;
 
-
+  //todo allow for specific rooms to be chosen. currently matches room number to guestID
   public Guest(String name, int guestId) {
     this.name = name;
     this.guestId = guestId;
+    roomNumber = guestId;
     checkInDate = LocalDate.now();
   }
 
@@ -24,7 +26,7 @@ public class Guest {
     return name;
   }
 
-  public int getGuestId() {
-    return guestId;
+  public LocalDate getCheckInDate() {
+    return checkInDate;
   }
 }
