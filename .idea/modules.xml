@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FriendShip/FriendShip.iml" filepath="$PROJECT_DIR$/FriendShip/FriendShip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTTPClientDemo/HTTPClientDemo.iml" filepath="$PROJECT_DIR$/HTTPClientDemo/HTTPClientDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/FriendShip/ItemSeparator.iml" filepath="$PROJECT_DIR$/FriendShip/ItemSeparator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Small-Java-Projects.iml" filepath="$PROJECT_DIR$/.idea/Small-Java-Projects.iml" />
-      <module fileurl="file://$PROJECT_DIR$/httpRequest/httpRequest.iml" filepath="$PROJECT_DIR$/httpRequest/httpRequest.iml" />
     </modules>
   </component>
 </project>
